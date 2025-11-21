@@ -1,5 +1,5 @@
-
-
+Mehmet Mete EKER 150722013
+Muhammet Emre MEMİLİ-150721033
 
 This project performs basic grayscale image processing on an STM32 microcontroller using a test image stored as a header file. All processing is done in C without external libraries, demonstrating how fundamental DSP techniques can run directly on embedded hardware.
 
