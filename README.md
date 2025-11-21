@@ -1,3 +1,6 @@
+
+
+
 This project performs basic grayscale image processing on an STM32 microcontroller using a test image stored as a header file. All processing is done in C without external libraries, demonstrating how fundamental DSP techniques can run directly on embedded hardware.
 
 First, the MCU computes a 256-level histogram of the original image and sends the results as ASCII text over UART. This allows the histogram to be inspected inside STM32CubeIDE and provides a statistical view of the image.
@@ -8,6 +11,14 @@ The project then applies spatial filtering using 3×3 convolution kernels. A low
 
 Finally, a 3×3 median filter is used to reduce noise while preserving edges. The median-filtered result is also transferred over UART, completing the image-processing pipeline.
 
+
+<img width="64" height="64" alt="HighPass" src="https://github.com/user-attachments/assets/dabcdf0a-7546-4d2b-9b47-77fe6d3b225e" />
+
+<img width="64" height="64" alt="Histogram" src="https://github.com/user-attachments/assets/502de390-9339-4bb7-9a30-f368c3c306ef" />
+
+<img width="64" height="64" alt="LowPass" src="https://github.com/user-attachments/assets/d7072c28-177d-4619-9995-974714f4c3ca" />
+
+<img width="64" height="64" alt="Medain" src="https://github.com/user-attachments/assets/2489aa42-64d6-42f4-9f37-4dd154a99ed5" />
 
 | Original Histogram | Equalized Histogram |
 | ------------------ | ------------------- |
